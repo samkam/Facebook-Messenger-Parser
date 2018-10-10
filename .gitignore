@@ -1,3 +1,5 @@
 venv/
 test.zip
 .idea/
+*.html
+temp.txt
