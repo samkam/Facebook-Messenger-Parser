@@ -16,11 +16,28 @@ def main():
         text = f.read().decode('utf-8',"ignore")
         print(type(text))
     soup = BeautifulSoup(text)
+    text = soup.get_text("\n").split("\n")
+    '''
+    divs = soup.select("._3-95._2pi0._2lej")
+    for message in divs:
+        name = message.find("._3-96._2pi0")
+        txt = message.find("._3-96._2let")
+    print(temp)
+    print(type(divs[50]))
+
+    message = ""
+    name = ""
+    date = ""
+    print(len(divs))
+    exit()
     #print(soup.prettify())
     text = soup.prettify()
     print(type(text))
+    '''
     with open("out.html","w", encoding="utf-8") as f:
-        f.write(text)
+        for i in text:
+            if "nickname" in i:
+                f.write(i+"\n")
 
 
 main()
