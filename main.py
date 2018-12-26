@@ -16,8 +16,9 @@ def main():
     text = soup.get_text("\n").split("\n")
     with open("out.txt","w", encoding="utf-8") as f:
         for i in text:
+            f.write(i + "\n")
+            '''
             if "nickname" in i:
                 f.write(i+"\n")
-
-
+            '''
 main()
