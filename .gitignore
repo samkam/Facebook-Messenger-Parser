@@ -2,4 +2,5 @@ venv/
 test.zip
 .idea/
 *.html
+out.txt
 temp.txt
