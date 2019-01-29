@@ -1,4 +1,4 @@
-#Facebook Messenger Parser
+# Facebook Messenger Parser
 Work in progress.
 
 Utility for extracting information on nicknames and group message names for Facbebook Messenger.
